@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+}
+
+#jeu {
+    display: inline-block;
+}
+
+#guess-input {
+    font-size: 1.2em;
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.feedback-nouvelle_ligne {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.lettre {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.correct {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.present {
+    background-color: #c9b458;
+    color: white;
+}
+
+.absent {
+    background-color: #787c7e;
+    color: white;
+}
