@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wordle en FastAPI</title>
+    <link rel="stylesheet" href="/static/wordle.css">
+</head>
+<body>
+    <h1>Wordle Back End FastAPI</h1>
+
+    <div id="jeu">
+        <input type="text" id="guess-input" maxlength="5" placeholder="Entrez un mot de 5 lettres">
+        
+        <!-- Bouton "Valider"-->
+        <button onclick="submitGuess()">Valider</button>
+        <div id="feedback"></div>
+        <div id="message" style="margin-top: 10px; font-weight: bold; color: #333;"></div>
+    </div>
+
+    <!-- Affichage du score -->
+    <div style="position: absolute; top: 10px; right: 20px; font-size: 1.2em; font-weight: bold;">
+        <span>Points : <span id="score">0</span></span>
+    </div>
+
+    <!-- Affichage des essais (max 6)-->
+    <div id="essais-container" style="position: absolute; top: 10px; left: 20px; font-size: 1.2em; font-weight: bold;">
+        <span>Essais: <span id="essais">0</span>/6</span>
+    </div>
+    
+    <!-- Bouton "Rejouer" -->
+    <div id="replay-container" style="margin-top: 20px; display: block;">
+        <button onclick="replayGame()">Rejouer</button>
+    </div>
+
+    <script src="/static/wordle.js"></script>
+</body>
+</html>
